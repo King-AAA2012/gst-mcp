@@ -1,0 +1,36 @@
+{
+  "name": "gst-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Indian GSTIN verification and validation. Lets Claude and other AI tools look up any GSTIN (legal name, status, tax jurisdiction, FSSAI, plant addresses) and validate GSTINs locally.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gst",
+    "gstin",
+    "india",
+    "gstn",
+    "tax",
+    "indian-gst"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "gst-mcp": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.6.1"
+  }
+}
